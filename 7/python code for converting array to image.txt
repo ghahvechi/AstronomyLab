@@ -1,0 +1,12 @@
+import skimage.io
+import numpy as np
+import skimage.feature as skif
+
+final_image_array = np.load("../data/final_stars_image/final_stars_image.npy").T
+
+# Rescale the image to the 0-255 range (uint8)
+scaled_image_array = ((final_image_array - final_image_array.min()) / 
+                      (final_image_array.max() - final_image_array.min()) * 500).astype(np.uint8)
+
+# Save the image using skimage.io.imsave()
+skimage.io.imsave("../data/final_stars_image/final_final.png", scaled_image_array)
