@@ -27,6 +27,6 @@ done
 3. Converted FITS files will be saved in the fits directory.
 
 ### Notes
-. This script assumes that your raw files have either a .NEF or .CR2 extension. Adjust the script if your raw files have a different extension.
-. Make sure to have the dcraw and pamtofits utilities installed on your system for this script to work properly.
-. You can customize the script further based on your specific requirements or preferences.
+* This script assumes that your raw files have either a .NEF or .CR2 extension. Adjust the script if your raw files have a different extension.
+* Make sure to have the dcraw and pamtofits utilities installed on your system for this script to work properly.
+* You can customize the script further based on your specific requirements or preferences.
